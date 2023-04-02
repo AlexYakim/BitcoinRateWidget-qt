@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>253</width>
+    <height>212</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="2">
+     <widget class="QLabel" name="bitcoin_pic">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" rowspan="2" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="Changed1H">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Changed1D">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="Changed7D">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="percent1H">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="percent1D">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="percent7D">
+          <property name="styleSheet">
+           <string notr="true">font-size: 13px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLabel" name="bitcoin_currency">
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px; font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2" alignment="Qt::AlignBottom">
+     <widget class="QLabel" name="Last_updating">
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px; font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Курс Bitcoin</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" alignment="Qt::AlignLeft|Qt::AlignBottom">
+     <widget class="QPushButton" name="pushButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>[ _ ]</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" alignment="Qt::AlignRight|Qt::AlignBottom">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>[ x ]</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
