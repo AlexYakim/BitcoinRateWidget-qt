@@ -25,8 +25,8 @@ protected:
 public:
     Currency_parsing();
 void SetUrl(QString);
-    void fech_now();
-    void fech_1h_1d_7d();
+    void Request_now();
+    void Request_1h_1d_7d();
     double price_now;
     double price_1h;
     double price_1d;

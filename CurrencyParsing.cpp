@@ -3,33 +3,33 @@
 Currency_parsing::Currency_parsing()
 {
 
-
+//Setting up signal and slot connections
     manager_now = new QNetworkAccessManager(this);
     connect(manager_now,&QNetworkAccessManager::finished,this, &Currency_parsing::Get_Currency_Finished_Now);
     manager_1h_1d_7d= new QNetworkAccessManager(this);
     connect(manager_1h_1d_7d,&QNetworkAccessManager::finished,this, &Currency_parsing::Get_Currency_Finished_1h_1d_7d);
 }
-
+// Method to set up a currency exchange Url
 void Currency_parsing::SetUrl(QString API_link){
     url.setUrl(API_link);
 
 }
 
-
-void Currency_parsing::fech_now(){
+//Sending a request for currency exchange rate data at a given time
+void Currency_parsing::Request_now(){
 
    QNetworkRequest request(url);
    manager_now->get(request);
 }
-
-void Currency_parsing::fech_1h_1d_7d(){
+//sending a request for exchange rate data for 1 day 1 hour and weeks
+void Currency_parsing::Request_1h_1d_7d(){
 
    QNetworkRequest request(url);
    manager_1h_1d_7d->get(request);
 }
 
 
-
+//Processing a response received about the state of bitcoin now
 void Currency_parsing::Get_Currency_Finished_Now(QNetworkReply* reply){
 
    if(reply->error() == QNetworkReply::NoError){
@@ -45,7 +45,7 @@ void Currency_parsing::Get_Currency_Finished_Now(QNetworkReply* reply){
 }
 
 
-
+//Processing of 1 day 1 hour and 1 week bitcoin response received
 void Currency_parsing::Get_Currency_Finished_1h_1d_7d(QNetworkReply* reply){
 
    if(reply->error() == QNetworkReply::NoError){
